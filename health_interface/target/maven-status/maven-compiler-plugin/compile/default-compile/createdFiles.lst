@@ -1,0 +1,5 @@
+com\healthya\service\OrderService.class
+com\healthya\service\CheckGroupService.class
+com\healthya\service\OrderSettingService.class
+com\healthya\service\CheckItemService.class
+com\healthya\service\SetmealService.class
