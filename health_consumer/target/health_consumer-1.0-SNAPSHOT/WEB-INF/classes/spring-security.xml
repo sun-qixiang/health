@@ -87,16 +87,16 @@
 
 
     -->
-    <!--账号和密码通过查询数据库的方式完成-->
-    <security:authentication-manager>
-        <security:authentication-provider user-service-ref="springSecurityUserService">
-            <security:password-encoder ref="bCryptPasswordEncoder"></security:password-encoder>
-        </security:authentication-provider>
-    </security:authentication-manager>
+<!--    &lt;!&ndash;账号和密码通过查询数据库的方式完成&ndash;&gt;-->
+<!--    <security:authentication-manager>-->
+<!--        <security:authentication-provider user-service-ref="springSecurityUserService">-->
+<!--            <security:password-encoder ref="bCryptPasswordEncoder"></security:password-encoder>-->
+<!--        </security:authentication-provider>-->
+<!--    </security:authentication-manager>-->
 
     <!--创建BCryptPasswordEncoder-->
     <!--新增用户：开发中真去做这个功能，在保存用户的时候，使用bCryptPasswordEncoder.encode("123")-进行加密处理-->
     <bean id="bCryptPasswordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"></bean>
 
-    <context:component-scan base-package="com.itheima"></context:component-scan>
+    <context:component-scan base-package="com.healthya"></context:component-scan>
 </beans>
